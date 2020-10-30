@@ -1,0 +1,600 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/head2.png" />
+<title>SeeSign</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" type="text/css" href="css/imgeffect.css" />
+<script src="js/jquery.min.js"></script>
+<!-- start gallery Script -->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+				<script type="text/javascript">
+				$(function () {
+					
+					var filterList = {
+					
+						init: function () {
+						
+							// MixItUp plugin
+							// http://mixitup.io
+							$('#portfoliolist').mixitup({
+								targetSelector: '.portfolio',
+								filterSelector: '.filter',
+								effects: ['fade'],
+								easing: 'snap',
+								// call the hover effect
+								onMixEnd: filterList.hoverEffect()
+							});				
+						
+						},
+						
+						hoverEffect: function () {
+						
+							// Simple parallax effect
+							$('#portfoliolist .portfolio').hover(
+								function () {
+									$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+									$(this).find('img').stop().animate({top: 0}, 500, 'easeOutQuad');				
+								},
+								function () {
+									$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeInQuad');
+									$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+								}		
+							);				
+						
+						}
+			
+					};
+					
+					// Run the show!
+					filterList.init();
+					
+					
+				});	
+				</script>
+				<!-- Add fancyBox main JS and CSS files -->
+				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<link href="web/css/magnific-popup.css" rel="stylesheet" type="text/css">
+						<script>
+							$(document).ready(function() {
+								$('.popup-with-zoom-anim').magnificPopup({
+									type: 'inline',
+									fixedContentPos: false,
+									fixedBgPos: true,
+									overflowY: 'auto',
+									closeBtnInside: true,
+									preloader: false,
+									midClick: true,
+									removalDelay: 300,
+									mainClass: 'my-mfp-zoom-in'
+							});
+						});
+						</script>
+				<script type="text/javascript" src="js/move-top.js"></script>
+				<script type="text/javascript" src="js/easing.js"></script>
+				<!--end gallery-->
+				
+		   	<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+					});
+				});
+			</script>
+</head>
+
+<body>
+		<!--start-header-->
+				<div class="header_bg">
+					<div class="wrap">
+						<div class="header">
+							<!--start-logo-->
+							<div class="logo">
+								<a href="index.html"><img src="images/logo_changed.png" alt="" /></a>
+							</div>	
+							<!--end-logo-->
+							<!--start-nav-->	
+							<div class="nav">
+								<ul>
+								   <li><a href="#home" class="scroll">Home</a></li>
+								   <li><a href="#portfolio" class="scroll">meaning of the project</a></li>
+								   <li><a href="#about" class="scroll">About</a></li>
+								   <li><a href="#contact" class="scroll">Contact</a></li>
+								 <div class="clear"> </div>
+								 </ul>
+							</div>
+							<!---end-nav-->
+							<div class="clear"> </div>
+						</div>
+					</div>
+				</div>
+		<!--end-header-->
+		<!-- start slider -->
+<div class="slider_bg">
+		<div class="wrap">
+				<!--start-da-slider-->
+						<div class="da-slide">
+								<h2><span>See</span>Sign</h2>
+									<a href="#portfolio" class="scroll"><span class="da-img"> </span> </a>
+								</div>
+				<!--//End-da-slider-->
+		</div>
+</div>
+<!---end-slider-->
+<!--start portfolio-->
+	<div class="wrap" id="portfolio">
+				<div class="main">
+					<!-- start gallery  -->
+							<div class="gallery1">
+					<!--start-mfp -->	
+						<div id="small-dialog1" class="mfp-hide">
+							
+						</div>
+					<!--end-mfp -->	
+		<!---start-content-->
+			<div class="gallery">
+					<div class="clear"> </div>
+					<div class="container">
+						<h2>Meaning of the project</h2>
+						<p>The essence of our project is that the tourist who came to Lviv, saved his time and could independently explore the city without the help of different guides. A person can launch our application, approach any monument of Lviv architecture and read the screen information about this building.</p>
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="logo const_imp jserver GPS connect studio denwer SQL">All</span></li>
+						<li><span class="filter" data-filter="const_imp jserver connect">server side</span></li>
+						<li><span class="filter" data-filter="const_imp GPS studio">app side</span></li>
+						<li><span class="filter" data-filter="const_imp connect denwer SQL"> database creating</span></li>
+					</ul>
+			<div id="portfoliolist">
+			
+		<div>
+
+			<div  class="portfolio logo content" data-cat="logo" >
+				<div class="portfolio-wrapper">				
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-1">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>Teamwork</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+				</div>
+			</div>		
+				
+			<div class="portfolio jserver" data-cat="jserver">
+				<div class="portfolio-wrapper">			
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-2">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>java server</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>	
+			<div class="hide">	
+			<div class="portfolio const_imp" data-cat="const_imp">
+				<div class="portfolio-wrapper">						
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-3">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>constant improvement</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>	
+			</div>
+			
+			<div class="portfolio GPS" data-cat="GPS">
+				<div class="portfolio-wrapper">			
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-4">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>GPS-navigation</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>	
+				
+			<div class="hide">	
+			<div class="portfolio connect" data-cat="connect">
+				<div class="portfolio-wrapper">
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-5">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>database-server connection</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>	
+			</div>	
+			<div class="hide">
+			<div class="portfolio studio" data-cat="studio">
+				<div class="portfolio-wrapper">			
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-6">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>App on <br> Android Studio</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>	
+			</div>
+			<div>
+			<div class="portfolio denwer" data-cat="denwer">
+				<div class="portfolio-wrapper">			
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-7">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>Denwer <br> local server</h3>
+										<p><a href="#">SeeSign</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>	
+			</div>
+			<div>
+			<div class="portfolio SQL" data-cat="SQL" id="hide">
+				<div class="portfolio-wrapper">			
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-8">
+									<div class="ch-info">
+										<img src="images/head2.png"/>
+										<h3>MySQL based<br>phpmyadmin</h3>
+										<p><a href="#"></a>SeeSign</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+
+		</div>
+						</div>
+
+		</div>
+	</div><!-- container -->
+	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<script type="text/javascript">$('body').flipLightBox()</script>
+	<div class="clear"> </div>
+	</div>
+	</div>
+	</div>
+</div>
+<!--End-gallery-->
+<!--start-about-->
+
+<div class="about" id="about">
+	<div class="wrap">
+	<h2>About US</h2>
+	<p>Meet our team</p>
+		<div class="about-grids">
+			
+			<div class="grid">
+				<div class="dc_zoom_css">
+				<span class="roll_css6">
+					<div class="social">
+						<ul>
+							<li><a class="sharefacebook" href="#"> </a> </li>
+							<li><a class="sharetwitter" href="#"> </a> </li>
+
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</span>
+				<img class="post-person" src="images/img2_new.jpg">
+				</div>
+				<div class="desc">
+					<h3>Bohdan Humenchuk</h3>
+					<p>team leader</p>
+					<p>Project management, server creating on Java, server connecting with the database and application.</p>
+
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="dc_zoom_css">
+				<span class="roll_css6">
+					<div class="social">
+						<ul>
+							<li><a class="sharefacebook" href="#"> </a> </li>
+							<li><a class="sharetwitter" href="#"> </a> </li>
+
+
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</span>
+				<img class="post-person" src="images/img1_new.jpg">
+				</div>
+				<div class="desc">
+					<h3>Yuri Drevnitsky</h3>
+					<p>app developer</p>
+					<p>Developing the application based on the Android Studio for the client, design development.</p>
+				</div>
+		
+			</div>
+			<div class="grid">
+				<div class="dc_zoom_css">
+				<span class="roll_css6">
+					<div class="social">
+						<ul>
+							<li><a class="sharefacebook" href="#"> </a> </li>
+							<li><a class="sharetwitter" href="#"> </a> </li>
+
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</span>
+				<img class="post-person" src="images/img3_new.jpg">
+				</div>
+				<div class="desc">
+					<h3>Oleh Scherban</h3>
+					<p>DataBase creator</p>
+					<p>Сreating the database based on the MySQL that will store the building information for the client.</p>
+				
+				</div>
+			</div>
+									<div class="grid">
+				<div class="dc_zoom_css">
+				<span class="roll_css6">
+					<div class="social">
+						<ul>
+							<li><a class="sharefacebook" href="#"> </a> </li>
+							<li><a class="sharetwitter" href="#"> </a> </li>
+
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</span>
+				<img class="post-person" src="images/img4_new.png">
+				</div>
+				<div class="desc">
+					<h3>Vladyslav Bielan</h3>
+					<p>main assistant</p>
+					<p>Creating a fact-finding site, extending the database, searching information in the Internet.</p>
+
+				</div>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="zebra">
+	<div class="zebra-header">
+		<h2>Progress</h2>	
+		<p>...our success...</p>
+  	</div>
+  	<div class="zebra-text">
+  		<span id="dots"></span><div id="more">
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>Database</th>
+      <th>Done</th>
+    </tr>
+    <tr>
+      <td>Server side</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td>Geolocation integration</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Application design</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>Database-server connection</td>
+      <td>in developing</td>
+    </tr>
+    </tr>
+  </table>
+</div></div>
+  		<button onclick="myFunction()" id="myBtn">Read more</button>
+  </div>
+	<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  	</div>
+
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/arh1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/arh2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/arh3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/arh4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/arh5.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/arh6.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:left">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}</script>
+</div>
+<!--end-about-->
+<div class="contact" id="contact">
+	<div class="wrap">
+		<h2>Contact US</h2>
+		<h4>Download our application from the link below, or contact us by phone number or by mail.</h4>
+		<div class="section group">
+			  <div class="col span_2_of_3">
+
+				  <div class="contact-form">
+				  	<a href="https://play.google.com/store"><img src="images/google_play.png" alt="Google Play store page"></a>
+
+				  </div>
+  				</div>
+				<div class="col span_1_of_3">
+					<div class="company_address">
+				     	<pre><h5>             INFORMATION</h5></pre>
+						<ul class="list3">
+							<li>
+								<img src="images/location.png" alt=""/>
+								<div class="extra-wrap">
+								  <p>Lviv Polytechnic National University</p>
+								  <p>AI Department</p>
+								  <p>SeeSign, 5 Knyazya Romana str.</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
+							
+							<li>
+								<img src="images/phone.png" alt=""/>
+								<div class="extra-wrap">
+									<p>8 800 555 35 35</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
+
+							<li>
+								<img src="images/mail.png" alt=""/>
+								<div class="extra-wrap">
+									<p>seesign.lviv@gmail.com</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
+						</ul>
+				   </div>
+				 </div>
+				 <div class="clear"></div>
+			  </div>
+			  </div>
+     	</div>
+
+
+ <div class="google-app">
+	<div class="google-app-overlay"></div>
+	<div class="app">
+		<div class="app-map-form">
+			<div id="map"></div>
+			<script>
+				function initMap(){
+					var uluru = {lat: 49.836957, lng: 24.033618};
+					var map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: uluru});
+					var marker = new google.maps.Marker({position: uluru, map: map});
+				}
+			</script>
+			<script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXtA64VOlkv9YU90MpFAFOOUh9qjDtM3U&callback=initMap">
+            </script>
+		</div>
+		<div class="app-map-form">
+			<div id="app-form">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtIj0_5EsABzTiEfx-pvW26MxNbKl2WpycamVfjOSS9R3OMg/viewform?usp=sf_link" width="500" height="550" frameborder="0" marginheight="0" marginwidth="0">Çàãðóçêà...</iframe>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
